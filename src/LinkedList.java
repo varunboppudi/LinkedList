@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class LinkedList {
     public ListNode insertAtBegin(ListNode h, int v){
         ListNode nn = new ListNode(v);
@@ -50,4 +52,26 @@ public class LinkedList {
             p = p.next;
         }
     }
-}
+    public ListNode deleteAtbegin(ListNode h) {
+        if (h == null) {
+            System.out.println("List is empty");
+            return null;
+        }
+        ListNode p = h;
+        h = h.next;
+        return h;
+    }
+    public ListNode deleteAtend(ListNode h)
+    {
+        if(h==null)
+        {
+            System.out.println("List is empty");
+            return null;
+        }
+        ListNode p = h;
+        p.next.next=null;
+        return h;
+    }
+
+    }
+

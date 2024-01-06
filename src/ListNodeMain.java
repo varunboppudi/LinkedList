@@ -11,6 +11,10 @@ public class ListNodeMain {
         head = list.insertAtIndex(head, 2, 6);
         //list.printLL(head);
         head = list.deleteAtIndex(head,2);
+        //list.printLL(head);
+        head =list.deleteAtbegin(head);
+        //list.printLL(head);
+        head =list.deleteAtend(head);
         list.printLL(head);
     }
 }
